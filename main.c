@@ -10,12 +10,6 @@ int main(void)
 
     printf("num: %d \n", num);
 
-    // Lo que hacemos aca es crear en HEAP una estructura que es
-    // un conjunto de datos, el cual se crea con el constructor,
-    // retornando a la variable var la direccion del objeto en memoria,
-    // var es el puntero
-    // class_name var = new class_name();
-
     // Si quiero almacenar en una variable la direccion de otra variable
     // hago lo siguiente - esto es un puntero
     // El operador & me permite obtener la direccion de una variable
