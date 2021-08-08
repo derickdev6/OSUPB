@@ -2,14 +2,19 @@
 #include <stdlib.h>
 
 // Directivas
-#define M 5
-#define C 5
-#define MAP(val, m, c) val *m + c
+// Dependiendo de si la directiva CONDITION esta definida o no
+// Se ejecutara el codigo en la linea 11-12 o en la linea 13-14
+// #define CONDITION
+
+// Tambien se puede definir la variable CONDITION si se pasa
+// en el momento de compilar como -DCONDITION
 
 int main(int argc, char *argv[])
 {
-    int x = 2;
-    int y = MAP(x, M, C);
-    printf("y = %d\n", y);
+#ifdef CONDITION
+    printf("CODIGO IF\n");
+#else
+    printf("CODIGO ELSE\n");
+#endif
     return 0;
 }
