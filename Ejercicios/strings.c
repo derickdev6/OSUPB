@@ -3,10 +3,12 @@
 
 int main(void)
 {
-    char *text = "hola c";
+    char text[] = "hola c";
 
     printf("%s\n", text);
 
-    // *text = "H";
-    // printf("%s\n", text);
+    text[0] = 'H';
+    printf("%s\n", text);
+    *text = 'h';
+    printf("%s\n", text);
 }
